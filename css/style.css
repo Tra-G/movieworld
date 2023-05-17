@@ -1,5 +1,10 @@
+/*
+background-color: rgb(13, 12, 12);
 
-
+font-family: 'Roboto Mono', monospace;
+font-family: 'Sono', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
 
 /*CUSTOM CSS*/
 :root{
@@ -102,8 +107,7 @@ html{
 }
 
 body{
-    /*background-color: var(--background);*/
-    background: hsla(220, 17%, 7, 1);
+    background-color: rgb(11, 12, 13);
     color: var(--on-background);
     font-size: var(--fs-body);
     line-height: 1.5;
@@ -123,6 +127,47 @@ body{
     background-color: var(--banner-background);
     border-radius: var(--radius-8);
 }
+
+
+/*HEADER STYLING*/
+.moviename{
+    font-size: 1.8rem;
+    font-family: monospace;
+    font-weight: 500;
+}
+.header{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-wrapper{
+    display: flex;
+    align-items: center;
+    display: none;
+}
+.hamburger-btn{
+    display: flex;
+    align-items: center;
+}
+.hamburger-btn button{
+    padding: 10px 14px;
+}
+.close-btn{
+    display: none;
+    padding: 4px 8px;
+}
+.search-btn, .close-btn{ 
+    background-color: var(--banner-background);
+    opacity: 0.5;
+    border-radius: var(--radius-8);
+    transition: var(--transition-short);
+}
+.search-btn:is(:hover, :focus-visible) {opacity: 1;}
+.search-box:active{
+    display: flex;
+}
+
 
 
 
